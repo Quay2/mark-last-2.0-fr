@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-6,100;0,677;0,900&display=swap');
+
+
+.LOGO{
+    padding-left: 12px;
+    font-size: 1.6em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;  
+}
+
+
+.text-123{
+    position: relative;
+    border-color: rgba(85, 85, 85, 0.541);
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 0.25em;
+}
+
+.text-123::before {
+    content: '';
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.25s ease-in-out;
+
+}
+.text-123:hover::before {
+    width: 100%;
+
+}
